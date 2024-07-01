@@ -1,0 +1,1352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOVELY PROFESSIONAL UNIVERSITY ONLINE | ONLINE LEARNING</title>
+    <link href="./assets/style.css" rel="stylesheet" />
+    <script src="./assets/jquery-3.6.0.min.js"></script>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script>
+        const utmParams = {};
+        function getUTMParameters() {
+            const urlParams = new URLSearchParams(window.location.search);
+            urlParams.forEach((value, key) => {
+                if (key.startsWith('utm_')) {
+                    utmParams[key] = value;
+                }
+            });
+            utmParams.utm_url = window.location.origin;
+            return;
+
+        }
+        getUTMParameters()
+    </script>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div class="logo-navbar">
+            <img src="./assets/img/LPU-Online-Logo.svg" />
+        </div>
+        <div class="nav-btn">
+            <button class="btn-success"><i class="fa-solid fa-phone"></i>+91 8094823926</button>
+
+
+            <button class="btn-success"><i class="fa-solid fa-phone"></i>+91 8094823926</button>
+        </div>
+    </div>
+
+    <div class="carousel-upper">
+        <div class="upper-content">
+            <div class="lower-content">
+                <h2 class="display-4 m-0 text-light fw-bold section-1-text-1 ps-lg-5">LPU Online
+                </h2>
+                <h3 class="display-4 m-0 fw-bold text-warning section-1-text-2 ps-lg-5">Career ka Turning Point
+
+                </h3>
+                <!-- <hr /> -->
+                <button class="apply-btn">Admissions Open 2024</button>
+            </div>
+
+
+
+            <div class="form-container">
+                <form id="form" action="https://cspm.geduconnect.in/api/enquery-now" method="post" class="appform">
+                    <input type="hidden" id="cmp" name="cmp" value="marketing_csp">
+                    <input type="hidden" id="source" name="source" value="13">
+                    <input type="hidden" id="level" name="level" value="2">
+                    <input type="hidden" id="country_code" name="country_code" value="+91">
+                    <input type="hidden" id="department" name="department" value="11">
+                    <input type="hidden" name="center" id="center" value="23456" />
+                    <input type="hidden" name="category" id="category" value="5" />
+                    <input type="hidden" name="nationality" id="nation" value="1" />
+                    <h2>Registration Form</h2>
+
+                    <input type="hidden" name="ProspectID" id="ProspectID" />
+                    <input type="text" name="name" id="name"
+                        onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || event.charCode==32"
+                        required="required" class="form-control" placeholder="Full name" />
+                    <input name="mobile" class="form-control" type="tel" id="mobile" placeholder="Mob." maxlength="10"
+                        size="10" pattern="[6789][0-9]{9}" required="required" />
+
+                    <input class="form-control" name="email" type="email" id="email"
+                        pattern="[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~.\-]+@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*" required="required"
+                        placeholder="Email" />
+
+                    <select class="form-control" name="state" onchange="statelists(this.value)" id="state"
+                        required="required">
+                        <option value="">Choose state</option>
+
+
+                    </select>
+
+                    <select class="form-control" name="city" id="city" required="required">
+                        <option value="">Choose city</option>
+
+
+                    </select>
+                    <select id="course" name="odlcourse" required placeholder="Enter Your Course">
+                        <option value="">Select Regular course</option>
+
+
+                    </select>
+
+
+                    <!-- Add other states as needed -->
+                    </select>
+                    <div class="term-condition">
+                        <input type="radio" name="radio" value="radio" />
+                        <p>I agree to receive information regarding my submitted enquiry </p>
+                    </div>
+                    <button class="btn-submit" type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="recognitions">
+        <h4>Recognised & accredited</h4>
+        <div class="recognition-container">
+            <div class="mySlides-recog">
+                <div class="recognitions-card">
+                    <img src="./assets/img/NAAC_LOGO.png" alt=" recognitions card" />
+                </div>
+                <div class="recognitions-card">
+                    <img src="./assets/img/AICTE-3.jpg" alt=" recognitions card" />
+                </div>
+            </div>
+            <div class="mySlides-recog">
+                <div class="recognitions-card">
+                    <img src="./assets/img/UGC-2.jpg" alt=" recognitions card" />
+                </div>
+                <div class="recognitions-card">
+                    <img src="./assets/img/NIRF-1.jpg" alt=" recognitions card" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="stepstofollow">
+        <h3 class="section-title">Steps To Follow</h3>
+        <div class="steps-container">
+            <div class="steps-card">
+                <div class="img-card">
+                    <img src="./assets/img/Vector.png" alt="Steps To Follow" />
+                </div>
+                <p>Register yourself</p>
+            </div>
+            <div class="line" id="line1"></div>
+            <div class="steps-card">
+                <div class="img-card">
+
+
+
+                    <img src="./assets/img/Group-1.png" alt="Steps To Follow" />
+                </div>
+                <p>Pay Application Fees</p>
+            </div>
+            <div class="line" id="line2"></div>
+            <div class="steps-card">
+                <div class="img-card">
+
+
+
+                    <img src="./assets/img/Subtract.png" alt="Steps To Follow" />
+                </div>
+                <p>Entrance Exam Interview</p>
+            </div>
+            <div class="line" id="line3"></div>
+            <div class="steps-card">
+                <div class="img-card">
+
+
+
+                    <img src="./assets/img/Vector-1.png" alt="Steps To Follow" />
+                </div>
+                <p>Result Offer Letter</p>
+            </div>
+            <div class="line" id="line4"></div>
+            <div class="steps-card">
+                <div class="img-card">
+
+
+
+                    <img src="./assets/img/Group 27.png" alt="Steps To Follow" />
+                </div>
+                <p>Seat Allotment Process</p>
+            </div>
+        </div>
+    </div>
+    <div class="listofdepts">
+        <h1>Explore Best Online Degree Programs In India</h1>
+        <div class="tabs">
+
+            <div class="tab-content">
+
+                <div id="BA" class="tab-pane active">
+                    <h3>Online BA</h3>
+                    <div class="courses-box">
+                        <h4>Programme Description</h4>
+                        <p>The Online Bachelor of Arts (BA) program at LPU Online provides a comprehensive academic
+                            experience, equipping you with diverse skills for varied career opportunities across fields.
+                            The program having industry-oriented curriculum comes with weekend LIVE lectures by top
+                            faculty, Master Classes by experts, Flexible Online Exams, Placement Support and much more.
+                        </p>
+                    </div>
+
+                    <div class="courses-box">
+                        <h4>Eligibility</h4>
+                        <p>Entry Level Qualifications for BBA Programme are as per the following:
+                            A pass in 12th Class from any Recognized Board.</p>
+                    </div>
+                    <div class="courses-box">
+                        <h4>Course Duration</h4>
+                        <p>3 Years</p>
+                    </div>
+
+
+
+                </div>
+                <div id="MA" class="tab-pane">
+                    <h3>Online MA</h3>
+                    <div class="courses-box">
+                        <h4>Programme Description</h4>
+                        <p>The Online Master of Arts in (MA) at LPU Online offers insights into
+                            social structures, interactions, and human dynamics, fostering informed perspectives on the
+                            complexities of the human experience. The program having industry-oriented curriculum comes
+                            with weekend LIVE lectures by top faculty, Master Classes by experts, Flexible Online Exams,
+                            Placement Support and much more.</p>
+                    </div>
+
+                    <div class="courses-box">
+                        <h4>Eligibility</h4>
+                        <p>Entry Level Qualifications for MA Programme are as per the following:
+                            The minimum eligibility criteria for admission in ODL and Online MA programme is a
+                            passed
+                            Bachelor Degree of minimum 2 years duration.</p>
+                    </div>
+                    <div class="courses-box">
+                        <h4>Course Duration</h4>
+                        <p>2 Years</p>
+                    </div>
+
+                    <!-- <div class="fees-table">
+                        <h5>Fee Structure</h5>
+                        <div class="table-container">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <td>Master of Arts</td>
+                                        <td>Sem I</td>
+                                        <td>Sem II</td>
+                                        <td>Sem III</td>
+                                        <td>Sem IV</td>
+
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Program Fee</td>
+                                        <td>Rs. 18,000/-</td>
+                                        <td>Rs. 18,000/-</td>
+                                        <td>Rs. 18,000/-</td>
+                                        <td>Rs. 18,000/-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Examination Fee</td>
+                                        <td>Rs. 2,000/-</td>
+                                        <td>Rs. 2,000/-</td>
+                                        <td>Rs. 2,000/-</td>
+                                        <td>Rs. 2,000/-</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>Semester Total</td>
+                                        <td> Rs. 20,000/-</td>
+                                        <td> Rs. 20,000/-</td>
+                                        <td> Rs. 20,000/-</td>
+                                        <td> Rs. 20,000/-</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>Total Fee</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>Rs. 1,20,000/-</td>
+
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!-- <p>Note:- Registration Fee (One time & non-refundable)Rs. 1,000/-</p> -->
+                    <!-- </div>
+
+                    </div> -->
+
+                </div>
+
+                <div id="BCA" class="tab-pane">
+                    <h3>Online BCA</h3>
+                    <div class="courses-box">
+                        <h4>Programme Description</h4>
+                        <p>The online Bachelor of Computer Applications (BCA) program at LPU Online teaches computing
+                            fundamentals and programming, preparing you for a promising IT career with boundless
+                            opportunities. The program having industry-oriented curriculum comes with weekend LIVE
+                            lectures by top faculty, Master Classes by experts, Flexible Online Exams, Placement Support
+                            and much more.
+                        </p>
+                    </div>
+
+                    <div class="courses-box">
+                        <h4>Eligibility</h4>
+                        <p>Entry Level Qualifications for BBA Programme are as per the following:
+                            A pass in 12th Class from any Recognized Board.</p>
+                    </div>
+                    <div class="courses-box">
+                        <h4>Course Duration</h4>
+                        <p>3 Years</p>
+                    </div>
+                    <!-- <div class="courses-box">
+                        <h4>Program Objectives</h4>
+                        <li>Practice the role of technology.</li>
+                        <li>Learn a variety of programming languages and software tools.</li>
+                        <li>
+                            Participate in internships, research projects, and more to develop your skills.</li>
+                        <li>Know about the modern solution frameworks used in today’s times.</li>
+                        <li>
+                            Implement various technical algorithms in a range of real-world applications.</li>
+
+                    </div> -->
+                    <!-- <div class="fees-table">
+                        <h5>Fee Structure</h5>
+                        <div class="table-container">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <td>Bachelor of Computer Application</td>
+                                        <td>Sem I</td>
+                                        <td>Sem II</td>
+                                        <td>Sem III</td>
+                                        <td>Sem IV</td>
+                                        <td>Sem V</td>
+                                        <td>Sem VI</td>
+
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Program Fee</td>
+
+                                        <td>Rs. 28,000/-</td>
+                                        <td>Rs. 28,000/-</td>
+                                        <td>Rs. 28,000/-</td>
+                                        <td>Rs. 28,000/-</td>
+                                        <td>Rs. 28,000/-</td>
+                                        <td>Rs. 28,000/-</td>
+
+
+
+                                    </tr>
+                                    <tr>
+                                        <td>Examination Fee</td>
+                                        <td>Rs. 2,000/-</td>
+                                        <td>Rs. 2,000/-</td>
+                                        <td>Rs. 2,000/-</td>
+                                        <td>Rs. 2,000/-</td>
+                                        <td>Rs. 2,000/-</td>
+                                        <td>Rs. 2,000/-</td>
+
+
+                                    </tr>
+                                    <tr>
+                                        <td>Semester Total</td>
+                                        <td> Rs.30,000/-</td>
+                                        <td> Rs.30,000/-</td>
+                                        <td> Rs.30,000/-</td>
+                                        <td> Rs.30,000/-</td>
+                                        <td> Rs.30,000/-</td>
+                                        <td> Rs.30,000/-</td>
+
+
+                                    </tr>
+                                    <tr>
+                                        <td>Total Fee</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>Rs. 1,80,000-</td>
+
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!-- <p>Note:- Registration Fee (One time & non-refundable)Rs. 1,000/-</p> -->
+                    <!-- </div>
+
+                    </div>  -->
+                </div>
+                <div id="MCA" class="tab-pane">
+                    <h3>Online MCA</h3>
+                    <div class="courses-box">
+                        <h4>Programme Description</h4>
+                        <p>The Online Master of Computer Applications (MCA) program offers five specializations,
+                            preparing tech enthusiasts for rewarding careers in the digital era. The program having
+                            industry-oriented curriculum comes with LIVE lectures by top-tier faculty on weekends,
+                            Master Classes by industry experts, Flexible Online Exams, Placement Support, and much more.
+                        </p>
+                    </div>
+
+                    <div class="courses-box">
+                        <h4>Eligibility</h4>
+                        <p>Entry Level Qualifications for MCA Programme are as per the following:
+                            The minimum eligibility criteria for admission in ODL and Online MCA programme is a
+                            passed
+                            Bachelor Degree of minimum 3 years duration.</p>
+                    </div>
+                    <div class="courses-box">
+                        <h4>Course Duration</h4>
+                        <p>3 Years</p>
+                    </div>
+                    <!-- <div class="courses-box">
+                        <h4>Program Objectives</h4>
+                        <li>Practice the role of technology.</li>
+                        <li>Learn a variety of programming languages and software tools.</li>
+                        <li>
+                            Participate in internships, research projects, and more to develop your skills.</li>
+                        <li>Know about the modern solution frameworks used in today’s times.</li>
+                        <li>
+                            Implement various technical algorithms in a range of real-world applications.</li>
+
+                    </div> -->
+                    <!-- <div class="fees-table">
+                        <h5>Fee Structure</h5>
+                        <div class="table-container">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <td>Master of Computer Application</td>
+                                        <td>Sem I</td>
+                                        <td>Sem II</td>
+                                        <td>Sem III</td>
+                                        <td>Sem IV</td>
+
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Program Fee</td>
+
+                                        <td>Rs. 33,000/-</td>
+                                        <td>Rs. 33,000/-</td>
+                                        <td>Rs. 33,000/-</td>
+                                        <td>Rs. 33,000/-</td>
+
+
+
+                                    </tr>
+                                    <tr>
+                                        <td>Examination Fee</td>
+                                        <td>Rs. 2,000/-</td>
+                                        <td>Rs. 2,000/-</td>
+                                        <td>Rs. 2,000/-</td>
+                                        <td>Rs. 2,000/-</td>
+
+
+                                    </tr>
+                                    <tr>
+                                        <td>Semester Total</td>
+                                        <td> Rs. 35,000/-</td>
+                                        <td> Rs. 35,000/-</td>
+                                        <td> Rs. 35,000/-</td>
+                                        <td> Rs. 35,000/-</td>
+
+
+                                    </tr>
+                                    <tr>
+                                        <td>Total Fee</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>Rs. 1,40,000-</td>
+
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!-- <p>Note:- Registration Fee (One time & non-refundable)Rs. 1,000/-</p> -->
+                    <!-- </div>
+
+                    </div>  -->
+                </div>
+
+                <div id="M.COM" class="tab-pane">
+                    <h3>Online M.COM</h3>
+                    <div class="courses-box">
+                        <h4>Programme Description</h4>
+                        <p>The online Master of Business Administration (MBA) program from LPU Online helps you explore
+                            the world of
+                            finance and business excellence and opens the door to a wealth of career opportunities. The
+                            program having industry-oriented curriculum comes with weekend LIVE lectures by top faculty,
+                            Master Classes by experts, Flexible Online Exams, Placement Support and much more.</p>
+                    </div>
+
+                    <div class="courses-box">
+                        <h4>Eligibility</h4>
+                        <p>Entry Level Qualifications for MCOM Programme are as per the following:
+                            The minimum eligibility criteria for admission in ODL MCOM programme is a
+                            pass
+                            in Graduation (BCOM) from any Recognized University.</p>
+                    </div>
+                    <div class="courses-box">
+                        <h4>Course Duration</h4>
+                        <p>2 Years</p>
+                    </div>
+                    <!-- <div class="courses-box">
+                        <h4>Program Objectives</h4>
+                        <li>Learn to find solutions to challenges faced by real-world businesses.</li>
+                        <li>Gain comprehensive education that will prepare you for a variety of careers.</li>
+                        <li>
+                            Network with a diverse and dynamic community of students, faculty, and industry experts.
+                        </li>
+                        <li>Collaborate with professionals and grow both personally as well as professionally.</li>
+                        <li>
+                            Acquire practical skills to succeed in today’s fast-paced business world.</li>
+
+                    </div> -->
+                    <!-- <div class="fees-table">
+                        <h5>Fee Structure</h5>
+                        <div class="table-container">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <td>Master of Commerce</td>
+                                        <td>Sem I</td>
+                                        <td>Sem II</td>
+                                        <td>Sem III</td>
+                                        <td>Sem IV</td>
+
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Program Fee</td>
+
+                                        <td>Rs. 23,000/-</td>
+                                        <td>Rs. 23,000/-</td>
+                                        <td>Rs. 23,000/-</td>
+                                        <td>Rs. 23,000/-</td>
+
+
+
+
+                                    </tr>
+                                    <tr>
+                                        <td>Examination Fee</td>
+                                        <td>Rs. 2,000/-</td>
+                                        <td>Rs. 2,000/-</td>
+                                        <td>Rs. 2,000/-</td>
+                                        <td>Rs. 2,000/-</td>
+
+
+
+                                    </tr>
+                                    <tr>
+                                        <td>Semester Total</td>
+                                        <td> Rs. 25,000/-</td>
+                                        <td> Rs. 25,000/-</td>
+                                        <td> Rs. 25,000/-</td>
+                                        <td> Rs. 25,000/-</td>
+
+
+
+                                    </tr>
+                                    <tr>
+                                        <td>Total Fee</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+
+
+
+                                        <td>Rs. 1,00,000/-</td>
+
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!-- <p>Note:- Registration Fee (One time & non-refundable)Rs. 1,000/-</p> -->
+                    <!-- </div>
+
+                    </div> -->
+                </div>
+
+
+
+                <div id="M.Sc" class="tab-pane">
+                    <h3>Online M.Sc Mathematics</h3>
+                    <div class="courses-box">
+                        <h4>Programme Description</h4>
+                        <p>The Online Master of Science in Mathematics (M.Sc Mathematics) at LPU Online hones analytical
+                            minds and mathematical acumen and helps you gain understanding of advanced mathematical
+                            concepts and applications. The program having industry-oriented curriculum comes with
+                            weekend LIVE lectures by top faculty, Master Classes by experts, Flexible Online Exams,
+                            Placement Support and much more.</p>
+                    </div>
+
+                    <div class="courses-box">
+                        <h4>Eligibility</h4>
+                        <p>Entry Level Qualifications for M.Sc Mathematics Programme are as per the following:
+                            The minimum eligibility criteria for admission in ODL MCOM programme is a
+                            pass
+                            in Graduation from any Recognized University.</p>
+                    </div>
+                    <div class="courses-box">
+                        <h4>Course Duration</h4>
+                        <p>2 Years</p>
+                    </div>
+                    <!-- <div class="courses-box">
+                        <h4>Program Objectives</h4>
+                        <li>Identify and construct mathematical models.</li>
+                        <li>Build a strong foundation in core areas of mathematics.</li>
+                        <li>
+                            Be able to communicate mathematical ideas effectively.</li>
+                        <li>Gain knowledge of mathematical modeling, programming, and computational techniques.</li>
+                        <li>
+                            Apply mathematical skills and logical reasoning for problem-solving.</li>
+
+                    </div> -->
+                    <!-- <div class="fees-table">
+                        <h5>Fee Structure</h5>
+                        <div class="table-container">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <td>Master of Commerce</td>
+                                        <td>Sem I</td>
+                                        <td>Sem II</td>
+                                        <td>Sem III</td>
+                                        <td>Sem IV</td>
+
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Program Fee</td>
+
+                                        <td>Rs. 18,000/-</td>
+                                        <td>Rs. 18,000/-</td>
+                                        <td>Rs. 18,000/-</td>
+                                        <td>Rs. 18,000/-</td>
+
+
+
+
+                                    </tr>
+                                    <tr>
+                                        <td>Examination Fee</td>
+                                        <td>Rs. 2,000/-</td>
+                                        <td>Rs. 2,000/-</td>
+                                        <td>Rs. 2,000/-</td>
+                                        <td>Rs. 2,000/-</td>
+
+
+                                    </tr>
+                                    <tr>
+                                        <td>Semester Total</td>
+                                        <td> Rs. 20,000/-</td>
+                                        <td> Rs. 20,000/-</td>
+                                        <td> Rs. 20,000/-</td>
+                                        <td> Rs. 20,000/-</td>
+
+
+                                    </tr>
+                                    <tr>
+                                        <td>Total Fee</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+
+
+                                        <td>Rs. 80,000/-</td>
+
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!-- <p>Note:- Registration Fee (One time & non-refundable)Rs. 1,000/-</p> -->
+                    <!-- </div>
+
+                    </div> -->
+                </div>
+            </div>
+            <div class="tab-buttons">
+
+                <div class="tab-button active">
+                    <button onclick="openTab(event, 'BA')">BA</button>
+                </div>
+                <div class="tab-button active">
+                    <button onclick="openTab(event, 'MA')">MA</button>
+                </div>
+
+                <div class="tab-button">
+                    <button onclick="openTab(event, 'BCA')">BCA</button>
+                </div>
+
+                <div class="tab-button">
+                    <button onclick="openTab(event, 'MCA')">MCA</button>
+                </div>
+
+                <div class="tab-button">
+                    <button onclick="openTab(event, 'M.COM')">M.COM</button>
+                </div>
+                <div class="tab-button">
+                    <button onclick="openTab(event, 'M.Sc')">M.Sc</button>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- <div class="about">
+        <div class="about-container">
+            <div class="about-img">
+                <img src="./assets/img/about.jpeg" alt="About Image" />
+            </div>
+            <div class="about-content">
+                <h2>About VGU</h2>
+                <p>
+
+                    Vivekananda Global University (VGU) is a private university located in Jaipur, Rajasthan, India.
+                    Established in 2012, VGU has rapidly developed into a prominent educational institution offering a
+                    variety of undergraduate, postgraduate, and doctoral programs across multiple disciplines. VGU
+                    offers a wide range of academic programs in fields such as Engineering and Technology, Management,
+                    Law, Architecture and Design, Basic and Applied Sciences, Agriculture, Humanities and Social
+                    Sciences and Commerce
+                </p>
+            </div>
+
+        </div>
+        <!-- <div>
+            <div class="about-infra">
+                <p>Largest infrastructure with </p>
+                <h3>8 lakhs+ sq.ft. built up space
+                </h3>
+                <p>50+ Interdisciplinary labs, 80+ lecture halls and studios, 3 hostel blocks, 550+ capacity
+                    auditorium, 8 Food joints.</p>
+            </div>
+        </div> -->
+    </div>
+
+
+
+
+
+    <!-- <div class="placements">
+        <div class="placement-container">
+            <div class="placement-content">
+                <h2>
+                    University with <span>Best Placement Support</span>
+                </h2>
+                <button>
+                    Apply Now
+                </button>
+            </div>
+            <div class="placement-stats">
+                <span>
+                    <h1>
+                        1495+
+                    </h1>
+                    <p>
+                        Placement Offers
+                    </p>
+                </span>
+                <span>
+                    <h1>
+                        85 LPA
+                    </h1>
+                    <p>
+                        Highest Package
+                    </p>
+                </span>
+                <span>
+                    <h1>
+                        285+
+                    </h1>
+                    <p>
+                        Dream Visited Companies
+                    </p>
+                </span>
+                <span>
+                    <h1>
+                        More than 10Cr
+                    </h1>
+                    <p>
+                        Worth Scholarship
+                    </p>
+                </span>
+            </div>
+        </div>
+    </div> -->
+    <div class="partners-section">
+        <h2>Our Hiring Partners</h2>
+        <div class="slideshow-container" id="carousel">
+
+            <div class="partners" id="content">
+
+                <div class="partners-card">
+                    <img src="./assets/img/intellipaat.png" alt="partner image" />
+                </div>
+                <div class="partners-card">
+                    <img src="./assets/img/Air_India_A_Star_Alliance_Member.png" alt="partner image" />
+                </div>
+                <div class="partners-card">
+                    <img src="./assets/img/teleperformance-vector-logo.png" alt="partner image" />
+                </div>
+                <div class="partners-card">
+                    <img src="./assets/img/ps.png" alt="partner image" />
+                </div>
+
+                <div class="partners-card">
+                    <img src="./assets/img/xs.png" alt="partner image" />
+                </div>
+
+
+                <div class="partners-card">
+                    <img src="./assets/img/1643889177_MCUBE_VMC.png" alt="partner image" />
+                </div>
+                <div class="partners-card">
+                    <img src="./assets/img/vfn_grp_cover.jpg" alt="partner image" />
+                </div>
+                <div class="partners-card">
+                    <img src="./assets/img/IndiGo-Logo.png" alt="partner image" />
+                </div>
+                <div class="partners-card">
+                    <img src="./assets/img/5eb39f388cf2c62f12119527_capitalvia-logo.svg" alt="partner image" />
+                </div>
+
+                <div class="partners-card">
+                    <img src="./assets/img/logo-8.jpg" alt="partner image" />
+                </div>
+
+                <!-- <button class="prev" onclick="prevSlide()">❮</button>
+            <button class="next" onclick="nextSlide()">❯</button>
+        </div>
+    </div> -->
+                <button id="prev">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="none" d="M0 0h24v24H0V0z" />
+                        <path d="M15.61 7.41L14.2 6l-6 6 6 6 1.41-1.41L11.03 12l4.58-4.59z" />
+                    </svg>
+                </button>
+                <button id="next">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="none" d="M0 0h24v24H0V0z" />
+                        <path d="M10.02 6L8.61 7.41 13.19 12l-4.58 4.59L10.02 18l6-6-6-6z" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="why-us">
+        <h5>
+            More Reasons to Choose LPU ONLINE
+        </h5>
+        <p>
+            Our Commitment to Quality and Overall Student Grooming
+        </p>
+
+        <div class="why-container">
+            <div class="why-card">
+                <img src="./assets/img/online-course.png" alt="why us image" />
+                <div class="content">
+                    <h4>Access to Exclusive resources
+                    </h4>
+                    <p>Get access to vast repository of online scholarly articles, case studies and journals</p>
+                    <p>Fulfill your academic requirement through various e-resources</p>
+                </div>
+            </div>
+            <div class="why-card">
+                <img src="./assets/img/certificate-icon.webp" alt="why us image" />
+                <div class="content">
+                    <h4>Seminars & Workshops
+
+                    </h4>
+                    <p>Professional Enhancement Workshops and Seminars</p>
+                    <p>Opportunity to learn from the experts and get latest Industry insights</p>
+                </div>
+            </div>
+            <div class="why-card">
+                <img src="./assets/img/webminar.png" alt="why us image" />
+                <div class="content">
+                    <h4>Webinars by Eminent speakers
+                    </h4>
+                    <p>Get educational inputs based on real-world life experiences
+                    </p>
+                    <p>Broaden scope for knowledge and skills
+                    </p>
+                </div>
+            </div>
+            <div class="why-card">
+                <img src="./assets/img/interview-line.png" alt="why us image" />
+                <div class="content">
+                    <h4>Mock Interviews
+
+                    </h4>
+                    <p>Practice sessions to boost your confidence and perform well in the actual Interview
+                    </p>
+                    <p> Constructive feedback to help you work on your weak areas</p>
+                </div>
+            </div>
+            <div class="why-card">
+                <img src="./assets/img/research-line.png" alt="why us image" />
+                <div class="content">
+                    <h4>Research opportunities
+
+                    </h4>
+                    <p>World class research facilities and infrastructure to undertake research endeavors
+
+                    </p>
+                    <p>Central Instrumentation Facility, Industry Sponsored & Collaborated Labs</p>
+                </div>
+            </div>
+            <div class="why-card">
+                <img src="./assets/img/incubation.png" alt="why us image" />
+                <div class="content">
+                    <h4>Incubation Centers
+
+                    </h4>
+                    <p>
+                        Provision for office space & equipment
+
+                    </p>
+                    <p>Technology support and seed capital
+                    </p>
+                    <p>Nurture talents for viable projects
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="life-at-univ">
+        <h2>
+            Life at LPU
+        </h2>
+        <p>Here you get to experience the most enriching and vibrant campus life while you learn
+        </p>
+        <div class="life-at-univ-container" id="carousel">
+            <div class="gallery-slider" id="content">
+                <div class="life-imgcard">
+                    <img src="./assets/img/lpu1.jpg" />
+                </div>
+                <div class="life-imgcard">
+                    <img src="./assets/img/lpu3.webp" />
+                </div>
+                <div class="life-imgcard">
+                    <img src="./assets/img/lpu4.webp" />
+                </div>
+                <div class="life-imgcard">
+                    <img src="./assets/img/lpu5.jpg" />
+                </div>
+
+                <div class="life-imgcard">
+                    <img src="./assets/img/LPU-1.jpg" />
+                </div>
+
+                <div class="life-imgcard">
+                    <img src="./assets/img/LPU-2.jpg" />
+                </div>
+
+                <!-- <div class="life-imgcard">
+                <img src="./assets/img/5eb39f388cf2c62f12119527_capitalvia-logo.svg" />
+            </div>
+
+             <div class="life-imgcard">
+                <img src="./assets/img/logo-8.jpg" />
+            </div> -->
+
+            </div>
+        </div>
+        <button id="prev">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path fill="none" d="M0 0h24v24H0V0z" />
+                <path d="M15.61 7.41L14.2 6l-6 6 6 6 1.41-1.41L11.03 12l4.58-4.59z" />
+            </svg>
+        </button>
+        <button id="next">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path fill="none" d="M0 0h24v24H0V0z" />
+                <path d="M10.02 6L8.61 7.41 13.19 12l-4.58 4.59L10.02 18l6-6-6-6z" />
+            </svg>
+        </button>
+    </div>
+    <!-- <div class="testimonial-container">
+        <h2> Our Students have to say</h2>
+        <div class="testimonials">
+            <div class="testimonial-slider">
+                <div class="testimonial actives">
+                    <p>This is the best service Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore fugiat
+                        tenetur magnam voluptatem maiores, ratione accusantium repellat nesciunt officia error et maxime
+                        libero dolores a quod voluptatibus vero harum facere.</p>
+                    <h4>John Doe</h4>
+                    <p>MBA</p>
+                </div>
+
+                <div class="testimonial">
+                    <p>This is the best service Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore fugiat
+                        tenetur magnam voluptatem maiores, ratione accusantium repellat nesciunt officia error et maxime
+                        libero dolores a quod voluptatibus vero harum facere.</p>
+                    <h4>John Doe</h4>
+                    <p>MBA</p>
+                </div>
+
+                <div class="testimonial">
+                    <p>This is the best service Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore fugiat
+                        tenetur magnam voluptatem maiores, ratione accusantium repellat nesciunt officia error et maxime
+                        libero dolores a quod voluptatibus vero harum facere.</p>
+                    <h4>John Doe</h4>
+                    <p>MBA</p>
+                </div>
+
+                <div class="testimonial">
+                    <p>This is the best service Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore fugiat
+                        tenetur magnam voluptatem maiores, ratione accusantium repellat nesciunt officia error et maxime
+                        libero dolores a quod voluptatibus vero harum facere.</p>
+                    <h4>John Doe</h4>
+                    <p>MBA</p>
+                </div>
+
+                <div class="testimonial">
+                    <p>This is the best service Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore fugiat
+                        tenetur magnam voluptatem maiores, ratione accusantium repellat nesciunt officia error et maxime
+                        libero dolores a quod voluptatibus vero harum facere.</p>
+                    <h4>John Doe</h4>
+                    <p>MBA</p>
+                </div>
+
+            </div>
+            <div class="controls">
+                <button class="prev">Prev</button>
+                <button class="next">Next</button>
+            </div>
+        </div>
+
+    </div> -->
+
+
+
+
+    <footer>
+        <div class="footer-container">
+            <!-- <div class="footer-content">
+                <img src="./assets/img/LPU-Online-Logo.svg" alt="Footer Image">
+            </div> -->
+            <div class="footer-content">
+                <h2>LPU Online</h2>
+                <p>Block 32, Lovely Professional University, Jalandhar - Delhi G.T. Road, Phagwara, Punjab
+                    (India),
+                    144411</p>
+            </div>
+            <div class="footer-content">
+                <h2>Contact Us</h2>
+                <p><b>Call us : </b>1800-313-1415</p>
+                <p><b>Email us : </b>admissions@lpuonline.com</p>
+            </div>
+            <div class="footer-content">
+                <h2>Apply Now</h2>
+                <a class="btn-apply">
+                    Apply Now
+                </a>
+            </div>
+        </div>
+        <div class="footer-end">
+            <p>© Copyright 2024 of LPU ONLINE | All Rights Reserved</p>
+        </div>
+    </footer>
+
+</body>
+<script>
+    function openTab(event, tabName) {
+        // Hide all tab panes
+        var tabPanes = document.querySelectorAll('.tab-pane');
+        tabPanes.forEach(function (pane) {
+            pane.classList.remove('active');
+        });
+
+        // Remove active class from all tab buttons
+        var tabButtons = document.querySelectorAll('.tab-button');
+        tabButtons.forEach(function (button) {
+            button.classList.remove('active');
+        });
+
+        // Show the current tab and add an active class to the button
+        document.getElementById(tabName).classList.add('active');
+        event.currentTarget.classList.add('active');
+    }
+    const gap = 20;
+
+    const carousel = document.getElementById("carousel"),
+        content = document.getElementById("content"),
+        next = document.getElementById("next"),
+        prev = document.getElementById("prev");
+
+    next.addEventListener("click", e => {
+        carousel.scrollBy(width + gap, 0);
+        if (carousel.scrollWidth !== 0) {
+            prev.style.display = "flex";
+        }
+        if (content.scrollWidth - width - gap <= carousel.scrollLeft + width) {
+            next.style.display = "none";
+        }
+    });
+    prev.addEventListener("click", e => {
+        carousel.scrollBy(-(width + gap), 0);
+        if (carousel.scrollLeft - width - gap <= 0) {
+            prev.style.display = "none";
+        }
+        if (!content.scrollWidth - width - gap <= carousel.scrollLeft + width) {
+            next.style.display = "flex";
+        }
+    });
+
+    let width = carousel.offsetWidth;
+    window.addEventListener("resize", e => (width = carousel.offsetWidth));
+
+
+</script>
+<script>
+    // $(document).ready(function() {
+    //     $('#course').select2();
+    //     $('#nation').select2();
+    // });
+
+
+
+
+    function getPrograms(prams) {
+        if (prams === '') {
+            $('#course').html('<option value="">Choose Course</option>');
+            return;
+        }
+        $.ajax({
+            url: "https://cspm.geduconnect.in/student/getPrograms?dept=" + prams,
+            dataType: 'json',
+            async: false,
+            success: function (response) {
+                //Do Something
+                if (response.status) {
+                    programs = response.data
+                    var opt = $('#course').html('<option value="">Choose Course</option>');
+                    for (let index = 0; index < programs.length; index++) {
+                        opt.append($("<option></option>").val(programs[index].code).text(programs[index].program + '(' + programs[index].dept + ')').attr('data-level', programs[index].level).attr('data-dept', programs[index].dept_id))
+                    }
+                    //$('#course').select2();
+                } else {
+                    alert('Something went wrong. please contact to university.')
+                }
+            },
+        });
+        return;
+
+    }
+    getPrograms('11,12,13,14');
+
+    $(document).ready(function () {
+        $("#form").submit(function (event) {
+            event.preventDefault();
+            $("#btn").text('Processing...').prop('disabled', true);
+            var actionUrl = $("#form").attr('action');
+            let courseCodes = $("#course").val();
+            courseCodes = courseCodes.split('-');
+            var formData = {
+                name: $("#name").val(),
+                email: $("#email").val(),
+                mobile: $("#mobile").val(),
+                country_code: $("#country_code").val(),
+                course: courseCodes[0],
+                nature: courseCodes[1],
+                course_type: courseCodes[2],
+                level: $("#level").val(),
+                department: $("#department").val(),
+                nationality: $("#nationality").val(),
+                source: $("#source").val(),
+                center: $("#center").val(),
+                category: $("#category").val(),
+                cmp: $("#cmp").val(),
+                country: "India",
+                state: $('#state').val(),
+                city: $('#city').val(),
+                utm_campaign: utmParams?.utm_campaign ?? '',
+                utm_content: utmParams?.utm_content ?? '',
+                utm_id: utmParams?.utm_id ?? '',
+                utm_medium: utmParams?.utm_medium ?? '',
+                utm_source: utmParams?.utm_source ?? '',
+                utm_term: utmParams?.utm_term ?? '',
+                utm_url: utmParams?.utm_url ?? '',
+                btntype: "enquery-now"
+            };
+
+            $.ajax({
+                type: "POST",
+                url: actionUrl,
+                data: formData,
+                dataType: "json",
+                success: function (data) {
+                    if (data.insertstatus === true) {
+                        alert("Your enquery has been successfully submitted.")
+                        window.location.href = 'https://vgu.admissionsunicollege.in/'
+                    } else {
+                        if (data.errs === undefined) {
+                            alert(data.msg);
+                        } else {
+                            error = [];
+                            if (data.errs.name !== undefined) {
+                                error.push(data.errs.name)
+                            }
+                            if (data.errs.email !== undefined) {
+                                error.push(data.errs.email)
+                            }
+                            if (data.errs.mobile !== undefined) {
+                                error.push(data.errs.mobile)
+                            }
+
+                            if (data.errs.course !== undefined) {
+                                error.push(data.errs.course)
+                            }
+
+                            if (data.errs.department !== undefined) {
+                                error.push(data.errs.department)
+                            }
+                            if (data.errs.department !== undefined) {
+                                error.push(data.errs.department)
+                            }
+
+                            if (data.errs.level !== undefined || data.errs.nature !== undefined || data.errs.course_type !== undefined || data.errs.country_code !== undefined || data.errs.nationality !== undefined) {
+                                alert('Something went wrong. please contact to university.');
+                            }
+
+                            if (error.length !== 0) {
+                                var s = '<ul>';
+                                for (let index = 0; index < error.length; index++) {
+                                    s += '<li>' + error[index] + '</li>';
+                                }
+                                s += '</ul>';
+                                //$("#modelBody").html(s)
+                                //$("#exampleModalCenter").modal('show');
+
+
+                            }
+                            $("#btn").text('Register Now').prop('disabled', false);
+                        }
+                    }
+                },
+                error: function (data) {
+                    alert('An error occurred.');
+
+                    $("#btn").text('Register Now').prop('disabled', false);
+                },
+
+
+            });
+        });
+    });
+
+</script>
+<script>
+    const HOSTURL = 'https://cspm.geduconnect.in/'
+
+    let statelist = [];
+
+    function statelists(statename = '', districtname = '') {
+        //alert('hello');
+        var state = document.getElementById('state');
+
+        var district = $('#city');
+
+        $.ajax({
+            url: HOSTURL + '/student/states',
+            type: 'get',
+            dataType: 'json',
+            async: false,
+            success: function (data) {
+                statelist = data;
+                for (var val in data) {
+                    if (data[val].state === statename) {
+                        $("<option />", {
+                            value: data[val].state,
+                            text: data[val].state,
+                            selected: 'selected'
+                        }).appendTo(state);
+
+                        getDistrictList(state, district, districtname);
+                    } else {
+                        $("<option />", {
+                            value: data[val].state,
+                            text: data[val].state
+                        }).appendTo(state);
+                    }
+
+                }
+
+            }
+        });
+    }
+    statelists();
+
+    function getDistrictList(state, district, districtname) {
+
+        district.find('option').not(':first').remove();
+        var state_selected = state.options[state.selectedIndex].text;
+        var result = statelist.find(({
+            state
+        }) => state === state_selected);
+        var districtlist = statelist[statelist.indexOf(result)].districts;
+        for (val in districtlist) {
+            if (districtlist[val] === districtname) {
+                $("<option />", {
+                    value: districtlist[val],
+                    text: districtlist[val],
+                    selected: 'selected'
+                }).appendTo(district);
+            } else {
+                $("<option />", {
+                    value: districtlist[val],
+                    text: districtlist[val]
+                }).appendTo(district);
+            }
+        }
+    }
+</script>
+<script>
+    const testimonials = document.querySelectorAll('.testimonial');
+    let currentIndex = 0;
+
+    document.getElementById('next').addEventListener('click', () => {
+        testimonials[currentIndex].classList.remove('actives');
+        currentIndex = (currentIndex + 1) % testimonials.length;
+        testimonials[currentIndex].classList.add('actives');
+    });
+
+    document.getElementById('prev').addEventListener('click', () => {
+        testimonials[currentIndex].classList.remove('actives');
+        currentIndex = (currentIndex - 1 + testimonials.length) % testimonials.length;
+        testimonials[currentIndex].classList.add('actives');
+    });
+
+    // Initialize the first testimonial as actives
+    testimonials[currentIndex].classList.add('actives');
+</script>
+
+</html>
